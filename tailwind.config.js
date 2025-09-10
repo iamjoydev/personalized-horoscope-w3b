@@ -1,14 +1,21 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./pages/**/*.{js,jsx,ts,tsx}",
+    "./components/**/*.{js,jsx,ts,tsx}"
+  ],
   theme: {
     extend: {
       colors: {
-        accent: "#ff7ac6",
+        cosmic1: "#0b0c1a",
+        cosmic2: "#1a1630",
+        accent: "#8a4fff",
+        gold: "#f7c948"
       },
       backgroundImage: {
-        "cosmic-gradient": "linear-gradient(135deg, #0d0d2b, #1a1a4d, #2e1065)",
-      },
-    },
+        'nebula': "url('/assets/backgrounds/nebula.jpg')"
+      }
+    }
   },
-  plugins: [],
+  plugins: []
 };

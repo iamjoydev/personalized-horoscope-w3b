@@ -1,2 +1,7 @@
-# personalized-horoscope-w3b
-Astro Horoscope Generator by Subrat Chakraborty (Owner, DWTech) is a modern, elegant astrology webapp built with Next.js and Node.js. It provides personalized daily, weekly &amp; monthly horoscopes, interactive zodiac charts, and PDF downloads, featuring a cosmic-themed, responsive UI, fully optimized for Vercel.
+# Astro Dashboard (Astrology webapp)
+Created for Subrat Chakraborty (DWTech).
+Next.js + TailwindCSS astrology dashboard with placeholder horoscope API.
+Replace the placeholder API logic with AstroSage Cloud or astronomia calculations for production.
+Run:
+  npm install
+  npm run dev

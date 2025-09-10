@@ -2,14 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Basic page & typography */
+:root{
+  --accent: #8a4fff;
+  --gold: #f7c948;
+}
+html,body,#__next{ height:100%; }
 body {
-  @apply bg-cosmic-gradient text-white min-h-screen font-sans;
+  @apply bg-gradient-to-b from-cosmic1 to-cosmic2 text-white min-h-screen;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
 }
 
+/* card and UI helpers */
+.app-container { @apply max-w-6xl mx-auto px-6 py-10; }
+.navbar { @apply flex items-center justify-between gap-4; }
+.logo { @apply text-xl font-semibold; }
+.search-input { @apply bg-white/5 border border-white/10 rounded-lg px-4 py-2 placeholder-gray-300 text-white w-full; }
+
+/* Tailwind-safe button */
 .btn-primary {
-  @apply inline-flex items-center justify-center px-6 py-3 rounded-xl bg-gradient-to-r from-accent to-purple-600 text-white font-semibold shadow-lg transform transition-all duration-300 hover:scale-105;
+  @apply inline-flex items-center gap-2 px-5 py-2 rounded-lg bg-gradient-to-r from-accent to-purple-600 font-semibold shadow-lg hover:scale-105 transition-transform;
 }
 
+/* glass card */
 .card {
-  @apply bg-black/30 backdrop-blur-xl p-6 rounded-2xl shadow-xl border border-white/10;
+  @apply bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-md shadow-xl;
 }
+
+/* zodiac wheel small */
+.zodiac-grid { @apply grid grid-cols-6 gap-3; }
